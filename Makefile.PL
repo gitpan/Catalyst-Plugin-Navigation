@@ -12,6 +12,7 @@ WriteMakefile(
 	PREREQ_PM     => {
 		'Moose::Role' => 0,
 		'Moose' => 0,
+		'File::Find::Rule'	=> '0'
 	},
 	dist          => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
 	clean         => { FILES => 'Catalyst-Plugin-Navigation-*' },

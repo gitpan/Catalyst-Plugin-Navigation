@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Catalyst-Plugin-Navigation
-version:            1.000
+version:            1.001
 abstract:           A navigation plugin for Catalyst
 author:
     - Derek Wueppelmann <derek@roaringpenguin.com>
@@ -11,8 +11,9 @@ configure_requires:
 build_requires:
     ExtUtils::MakeMaker:  0
 requires:
-    Moose:        0
-    Moose::Role:  0
+    File::Find::Rule:  0
+    Moose:             0
+    Moose::Role:       0
 no_index:
     directory:
         - t

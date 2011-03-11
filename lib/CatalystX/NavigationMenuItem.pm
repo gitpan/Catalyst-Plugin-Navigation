@@ -16,8 +16,8 @@ CatalystX::NavigationMenuItem
   	...
   );
 
-  my $entry = $mi->nav_entry();
-  my $link = $mi->get_link();
+  my $entry = $mi->nav_entry($c);
+  my $link = $mi->get_link($c);
 
 =head1 DESCRIPTION
 
@@ -231,7 +231,7 @@ sub get_link {
 	if ($self->condition_count > 0) {
 		# Test each conditions
 		foreach my $cond ($self->all_conditions) {
-			return undef if (!eval{$cond});
+			return undef if (!eval($cond));
 		}
 	}
 
