@@ -8,7 +8,7 @@ use CatalystX::NavigationMenu;
 use namespace::autoclean;
 
 use vars qw($VERSION);
-$VERSION = '1.001';
+$VERSION = '1.002';
 
 after setup_finalize => sub {
 	my ($self, @args) = @_;

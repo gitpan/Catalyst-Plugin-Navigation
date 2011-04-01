@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Catalyst-Plugin-Navigation
-version:            1.001
+version:            1.002
 abstract:           A navigation plugin for Catalyst
 author:
     - Derek Wueppelmann <derek@roaringpenguin.com>
